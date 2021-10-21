@@ -16,11 +16,19 @@ export default function Exterior() {
         <Header />
         
         <div className="mt-4 ">
-          <h2 className="mt-8 text-4xl font-semibold text-textcolor leading-tight opacity-80"> O Presidente da República e as Comunidades Cabo-verdianas no Exterior  </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight opacity-80"> O Presidente da República e as Comunidades Cabo-verdianas no Exterior  </h2>
 
           <div className="mt-5">
             <div className="shadow-2xl mb-8 ">
-              <Image src={exterior} />
+              <Image 
+              src={exterior} 
+              alt="Presidencia"
+              objectFit="cover"
+              priority={true}
+              loader={myLoader}
+              placeholder='blur'
+              blurDataURL={exterior}
+              />
             </div>
 
             <p className="mr-6 text-sm text-textcolor leading-relaxed">
@@ -46,7 +54,11 @@ export default function Exterior() {
             </div>
           </div>
 
-          <Footer />
+          <Footer 
+            title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
+            title2={<a className="text-base text-textcolor opacity-80 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="exterior"
+            title3={<a className="font-bold text-base text-textcolor opacity-50"> O Presidente da República e as Comunidades cabo-verdianas no exterior </a>} link3="/comunidade"
+          />
         </div>
       </section>
     </Layout>

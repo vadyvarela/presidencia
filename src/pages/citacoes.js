@@ -106,7 +106,7 @@ export default function Exterior() {
         </div>
       </section>
       <Footer 
-       title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/"
+       title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
        title2={<a className="text-base text-textcolor opacity-50 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2=""
        title3={<a className="font-bold text-base text-textcolor opacity-80">O Presidente da República e suas citações </a>} link3=""
       />

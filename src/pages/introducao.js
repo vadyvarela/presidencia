@@ -19,10 +19,10 @@ export default function Introducao() {
         <Header />
         
         <div className="mt-4 ">
-          <h2 className="mt-8 text-4xl font-semibold text-textcolor leading-tight opacity-80"> Introdução </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight opacity-80"> Introdução </h2>
 
-          <div className="mt-5 flex flex-row">
-            <div className="w-3/4">
+          <div className="mt-5 flex flex-col md:flex-row">
+            <div className="w-full md:w-3/4">
               <p className="mr-6 text-sm text-textcolor leading-normal">Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
                 O Presidente de Todos os Cabo-verdianos», apresentar ao leitor um olhar sobre o exercício da magistratura 
                 presidencial de Jorge Carlos Fonseca junto das nossas comunidades diaspóricas, a forma inovadora, criativa e 
@@ -44,11 +44,11 @@ export default function Introducao() {
 
                 A avaliar pelos resultados das eleições presidenciais de 2016 (venceu com 78,25% dos votos),  diríamos que a 
                 Presidência de Jorge Carlos de Almeida Fonseca no que concerne às comunidades cabo-verdianas no exterior foi 
-                uma estratégia conseguida.
+                uma estratégia conseguida. <br /><br />
 
               </p>
             </div>
-            <div className="shadow-xl w-1/4 transform hover:scale-110 transition delay-150 duration-300 ease-in-out rounded ">
+            <div className="shadow-xl w-full md:w-1/4 transform hover:scale-110 transition delay-150 duration-300 ease-in-out rounded ">
               <Image 
                 className="shadow-2xl"
                 loader={myLoader}
@@ -65,7 +65,11 @@ export default function Introducao() {
             </div>
           </div>
 
-          <Footer />
+          <Footer 
+            title1={<a className="text-base text-textcolor opacity-80 font-bold">Introdução </a>} link1="/introducao"
+            title2={<a className="text-base text-textcolor opacity-50 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="exterior"
+            title3={<a className="font-bold text-base text-textcolor opacity-50"> O Presidente da República e as Comunidades cabo-verdianas no exterior </a>} link3="/comunidade"
+          />
         </div>
       </section>
     </Layout>

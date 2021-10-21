@@ -72,6 +72,7 @@ input {
   height: 30px;
   position: absolute;
   right: 20px;
+  background: url('../public//img/close.png');
   top: 20px;
   background-size: 100%;
   cursor: pointer;
@@ -134,21 +135,21 @@ input {
 }
 
 #menuToggle:checked ~ .menuOpen .open:before {
-  content: "";
+  content: "fdsds";
   background-color: #395C83;
   transform: rotate(45deg);
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   z-index: 1;
 }
 
 #menuToggle:checked ~ .menuOpen .open:after {
-  content: "";
+  content: "ff";
   background-color: #395C83;
   transform: rotate(-45deg);
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   z-index: 1;
 }

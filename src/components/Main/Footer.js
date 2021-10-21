@@ -7,22 +7,22 @@ import Menu from '../Menu/Menu'
 
 export default function Footer(props) {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 w-full px-10">
-      <div className="flex items-center flex-row justify-between mt-6 py-4 bg-gbsite">
+    <footer className="fixed bottom-0 left-0 right-0 w-full px-10 bg-gbsite">
+      <div className="flex items-center flex-row justify-between py-4 ">
         <div>
           <Image src={left} width={25} height={25} />
         </div>
-        <div className="hidden ">
+        <div className="hidden  md:block">
           <Link href={`${props.link1}`}>{props.title1}</Link>
         </div>
-        <div className="hidden ">
+        <div className="hidden  md:block">
           <Link href={`${props.link2}`}>{props.title2}</Link>
         </div>
-        <div className="hidden ">
+        <div className="hidden md:block">
           <Link href={`${props.link3}`}>{props.title3}</Link>
         </div>
         <div>
-          <Image src={gallery} width={25} height={25} />
+          <Link href='/galeria'><a><Image src={gallery} width={25} height={25} /></a></Link>
         </div>
 
         <div className="mr-4 text-textcolor font-bold text-xl">

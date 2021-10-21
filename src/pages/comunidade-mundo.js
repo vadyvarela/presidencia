@@ -17,7 +17,7 @@ export default function ComunidadeMundo() {
         <Header />
         
         <div className="mt-4 ">
-          <h2 className="mt-8 text-4xl font-semibold text-textcolor leading-tight opacity-80"> Visitas às Comunidades radicadas nos Estados Unidos da America e resto do mundo </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight opacity-80"> Visitas às Comunidades radicadas nos Estados Unidos da America e resto do mundo </h2>
 
           <div className="mb-10 mt-5">
             <div className="shadow-2xl mb-8 ">
@@ -51,7 +51,7 @@ export default function ComunidadeMundo() {
           </div>
 
           <Footer 
-          title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/"
+          title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
           title2={<a className="text-base text-textcolor opacity-80 font-bold"> Visitas às Comunidades radicadas nos Estados Unidos da America e resto do mundo </a>} link2="/comunidade-mundo"
           title3={<a className="font-bold text-base text-textcolor opacity-50"> Condecorações </a>} link3="/condecoracoes"
           />

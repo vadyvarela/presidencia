@@ -8,9 +8,9 @@ const Layout = ({ children, title, canonical, description }) => (
       description={description}
       canonical={canonical}
       openGraph={{ title, description }} />
-    <duv>
+    <div>
       {children}
-    </duv>
+    </div>
   </main>
 )
 
