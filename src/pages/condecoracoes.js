@@ -67,8 +67,8 @@ export default function Condecoracoes() {
         </div>
         <Footer 
           title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
-          title2={<a className="text-base text-textcolor opacity-50 font-bold"> Condecorações </a>} link2="/condecoracoes"
-          title3={<a className="font-bold text-base text-textcolor opacity-80"> Visitas às Comunidades radicadas nos Estados Unidos da America e resto do mundo </a>} link3="/comunidade-mundo"
+          title2={<a className="text-base text-textcolor opacity-80 font-bold"> Condecorações </a>} link2="/condecoracoes"
+          title3={<a className="font-bold text-base text-textcolor opacity-50"> Citações </a>} link3="/citacoess"
           />
       </section>
     </Layout>

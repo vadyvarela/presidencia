@@ -37,7 +37,7 @@ export default function Home() {
             <Link href="/citacoes"><a className="flex items-center"> Citações</a></Link>
           </div>
           <div className="mr-8 text-textcolor font-bold opacity-80 text-sm md:text-xl">
-            <Link href=""><a className="flex items-center "> Galeria </a></Link>
+            <Link href="/galeria"><a className="flex items-center "> Galeria </a></Link>
           </div>
           <div className="mr-4 text-textcolor opacity-80 font-bold text-sm md:text-xl">
             <Link href="">

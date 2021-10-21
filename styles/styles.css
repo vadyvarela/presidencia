@@ -134,25 +134,6 @@ input {
   margin-top: 80px;
 }
 
-#menuToggle:checked ~ .menuOpen .open:before {
-  content: "";
-  background-color: #395C83;
-  transform: rotate(45deg);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-
-#menuToggle:checked ~ .menuOpen .open:after {
-  content: "";
-  background-color: #395C83;
-  transform: rotate(-45deg);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
 
 #menuToggle:not(:checked) ~ .menuEffects ul {
   transform: translateY(-30%);
