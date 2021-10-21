@@ -135,7 +135,7 @@ input {
 }
 
 #menuToggle:checked ~ .menuOpen .open:before {
-  content: "fdsds";
+  content: "";
   background-color: #395C83;
   transform: rotate(45deg);
   position: absolute;
@@ -145,7 +145,7 @@ input {
 }
 
 #menuToggle:checked ~ .menuOpen .open:after {
-  content: "ff";
+  content: "";
   background-color: #395C83;
   transform: rotate(-45deg);
   position: absolute;

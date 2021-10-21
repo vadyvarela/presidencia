@@ -61,6 +61,9 @@ export default function Galeria() {
               <circle cx="1842" cy="68" r="25" fill="" width="264.6" height="387.8"></circle>
             </a>
           </g>
+
+
+          
          
         </svg>
         </figure>

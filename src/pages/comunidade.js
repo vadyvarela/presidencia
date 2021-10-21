@@ -17,7 +17,7 @@ export default function Comunidade() {
       <section className="h-screen w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
         <Header />
         
-        <div className="mt-4 ">
+        <div className="mt-4">
           <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight opacity-80"> As Comunidades Cabo-verdianas no Exterior </h2>
 
           <div className="mt-5">
@@ -41,7 +41,7 @@ export default function Comunidade() {
 
             <h2 className="my-8 font-bold text-xl text-textcolor"> Estimativa da Comunidade Cabo-verdiana no Mundo</h2>
 
-            <div className="grid grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               <ComunidadeCard location="Estados Unidos" number="264.900" percente="51,12 %" />
               <ComunidadeCard location="Portugal" number="80.000" percente="15,44 %" />
               <ComunidadeCard location="Angola" number="45.000" percente="8,68 %" />

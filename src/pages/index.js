@@ -13,7 +13,7 @@ const myLoader = ({ src, width, quality }) => {
 
 export default function Home() {
   return (
-    <Layout title="Presidencia" description={`Descrisao...`}>
+    <Layout title="Presidencia" description={`Jorge Carlos Fonseca: O Presidente junto das Comunidades`}>
       <section className="h-screen w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
         <Header />
         
@@ -32,7 +32,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="fixed bottom-0 left-0 w-full p-10 mt-4 flex justify-end items-center">
+        <div className="fixed bottom-0 left-0 md:-left-20 w-full p-10 mt-4 flex justify-end items-center">
           <div className="mr-8 text-textcolor opacity-80 font-bold text-sm md:text-xl">
             <Link href="/citacoes"><a className="flex items-center"> Citações</a></Link>
           </div>
