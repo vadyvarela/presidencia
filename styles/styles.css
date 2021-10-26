@@ -3,7 +3,7 @@ input {
 }
 
 .open {
-  background-color: #3c3c3c;
+  background-color: #395C83;
   width: 24px;
   height: 4px;
   display: block;
@@ -15,7 +15,7 @@ input {
 
 .open:before {
   content: "";
-  background-color: #3c3c3c;
+  background-color: #395C83;
   width: 24px;
   height: 4px;
   display: block;
@@ -28,7 +28,7 @@ input {
 
 .open:after {
   content: "";
-  background-color: #3c3c3c;
+  background-color: #395C83;
   width: 24px;
   height: 4px;
   display: block;
@@ -168,3 +168,11 @@ input {
   left: 0; 
 }
 
+
+.shadowpr {
+  box-shadow: 0px 16px 19px -12px #0A386A;
+}
+
+.shadowpr div {
+  display: block !important;
+}

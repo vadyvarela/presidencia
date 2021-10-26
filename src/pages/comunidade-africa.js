@@ -17,10 +17,10 @@ export default function Comunidade() {
         <Header />
         
         <div className="mt-4 ">
-          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight opacity-80"> Visitas às Comunidades radicadas em África </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Visitas às Comunidades radicadas em África </h2>
 
-          <div className="mt-5">
-            <div className="shadow-2xl mb-8 ">
+          <div className="mt-5 mb-32">
+            <div className="shadowpr mb-8 ">
               <Image
               alt="Comunidade em África"
               src={comunidadeAfrica}
@@ -32,7 +32,7 @@ export default function Comunidade() {
               />
             </div>
 
-            <p className="mr-6 text-sm text-textcolor leading-relaxed">
+            <p className="mr-6 text-base text-corpo leading-relaxed">
               Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
               Relativamente à emigração cabo-verdiana no continente africano, Jorge Carlos Fonseca estabeleceu como 
               estratégia promover e encetar, em termos de intervenção presidencial, um diálogo de Alto Nível com os seus homólogos, 
@@ -44,7 +44,7 @@ export default function Comunidade() {
             </p>
 
 
-            <h2 className="my-6 text-textcolor text-3xl"> Galeria </h2>
+            <h2 className="my-6 text-subtitle text-3xl"> Galeria </h2>
             <div>
               <Link href="#"><a className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
               <Link href="#"><a className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
@@ -53,7 +53,7 @@ export default function Comunidade() {
 
           <Footer 
           title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
-          title2={<a className="text-base text-textcolor opacity-80 font-bold"> Visitas às Comunidades radicadas em África </a>} link2="/comunidade-africa"
+          title2={<a className="text-base text-textcolor font-bold"> Visitas às Comunidades radicadas em África </a>} link2="/comunidade-africa"
           title3={<a className="font-bold text-base text-textcolor opacity-50">  Visitas às Comunidades radicadas em Europa </a>} link3="/comunidade-europa"
           />
         </div>

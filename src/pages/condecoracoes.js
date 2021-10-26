@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import condecoracoes from '../../public/img/condecoracoes.png'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
 
@@ -17,10 +16,10 @@ export default function Condecoracoes() {
         <Header />
         
         <div className="mt-4 ">
-          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight opacity-80"> Condecorações </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Condecorações </h2>
 
-          <div className="mb-10 mt-5">
-            <div className="shadow-2xl mb-8 ">
+          <div className="mb-32 mt-5">
+            <div className="shadowpr mb-8 ">
               <Image
               alt="Condecorações"
               src={condecoracoes}
@@ -32,7 +31,7 @@ export default function Condecoracoes() {
               />
             </div>
 
-            <p className="mr-6 text-sm text-textcolor leading-relaxed">
+            <p className="mr-6 text-base text-textcolor leading-relaxed">
             Jorge Carlos Fonseca definiu o Dia Nacional da Cultura e das Comunidades – 18 de Outubro - como efeméride especial 
             para distinguir, em vida ou a título póstumo, cidadãos cabo-verdianos no exterior, que se notabilizem 
             por méritos pessoais, por feitos cívicos ou militares ou por serviços prestados ao País e nas comunidades onde 

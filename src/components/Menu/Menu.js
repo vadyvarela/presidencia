@@ -23,7 +23,7 @@ export default function Menu() {
         <LinkMenu title="Visitas às Comunidades radicadas em África" link="/comunidade-africa" />
         <LinkMenu title="Visitas às Comunidades radicadas na Europa" link="/comunidade-europa" />
 
-        <LinkMenu title="Visitas às Comunidades radicadas nos Estados Unidos da America e resto do mundo" link="comunidade-mundo3" />
+        <LinkMenu title="Visitas às Comunidades radicadas nos Estados Unidos da America e resto do mundo" link="comunidade-mundo" />
         <LinkMenu title="Condecorações" link="/condecoracoes" />
         <LinkMenu title="Citações" link="/citacoes" />
         <LinkMenu title="Galeria de Fotos" link="/galeria" />

@@ -16,10 +16,10 @@ export default function Exterior() {
         <Header />
         
         <div className="mt-4 ">
-          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight opacity-80"> O Presidente da República e as Comunidades Cabo-verdianas no Exterior  </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> O Presidente da República e as Comunidades Cabo-verdianas no Exterior  </h2>
 
-          <div className="mt-5">
-            <div className="shadow-2xl mb-8 ">
+          <div className="mt-5 mb-32">
+            <div className="shadowpr mb-8 ">
               <Image 
               src={exterior} 
               alt="Presidencia"
@@ -31,7 +31,7 @@ export default function Exterior() {
               />
             </div>
 
-            <p className="mr-6 text-sm text-textcolor leading-relaxed">
+            <p className="mr-6 text-base text-textcolor leading-relaxed">
               A 21 de Agosto de 2011, o cidadão Jorge Carlos de Almeida Fonseca foi eleito ao cargo de Presidente da República, 
               Chefe de Estado e representante máximo da Nação, com 54,09 por cento dos votos, correspondentes a 97.103 votos.
               <br /> <br />

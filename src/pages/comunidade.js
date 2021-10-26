@@ -18,14 +18,21 @@ export default function Comunidade() {
         <Header />
         
         <div className="mt-4">
-          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight opacity-80"> As Comunidades Cabo-verdianas no Exterior </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> As Comunidades Cabo-verdianas no Exterior </h2>
 
-          <div className="mt-5">
-            <div className="shadow-2xl mb-8 ">
-              <Image src={comunidade} />
+          <div className="mt-5 mb-32">
+            <div className="shadowpr mb-8 ">
+              <Image src={comunidade}
+                alt="Comunidade"
+                objectFit="cover"
+                priority={true}
+                loader={myLoader}
+                placeholder='blur'
+                blurDataURL={comunidade}
+              />
             </div>
 
-            <p className="mr-6 text-sm text-textcolor leading-relaxed">Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
+            <p className="mr-6 text-base text-corpo leading-relaxed">Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
             A emigração está profundamente enraizada na sociedade cabo-verdiana apresentando-se como um 
             dos fenómenos mais antigos e estáveis, antecedendo em muitas décadas, a independência de Cabo Verde, em 1975. <br />
             Como recurso para colmatar as muitas privações sentidas, os habitantes deste arquipélago do Sahel demandaram 
@@ -39,7 +46,7 @@ export default function Comunidade() {
             O Quadro abaixo aponta para números mais modestos, mas mesmo assim confirma a superioridade em número da comunidade residente fora do país e identifica as paragens onde homens e mulheres destas ilhas demandaram, em África, na Europa e na América, em busca de uma vida melhor. 
             </p>
 
-            <h2 className="my-8 font-bold text-xl text-textcolor"> Estimativa da Comunidade Cabo-verdiana no Mundo</h2>
+            <h2 className="my-8 font-bold text-xl text-subtitle"> Estimativa da Comunidade Cabo-verdiana no Mundo</h2>
 
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               <ComunidadeCard location="Estados Unidos" number="264.900" percente="51,12 %" />
@@ -51,14 +58,14 @@ export default function Comunidade() {
             </div>
 
             <p className="text-textcolor text-sm my-5"> Fonte: IAPE: Ministério das Comunidades, 2009 </p>
-            <p className="mr-6 text-sm text-textcolor leading-relaxed">
+            <p className="mr-6 text-base text-corpo leading-relaxed">
             A importância estratégica da emigração para o desenvolvimento de Cabo Verde, em termos económicos, políticos, 
             sociais e culturais, é um facto incontestável. De tal maneira que nos assumimos como um Estado cujas políticas 
             públicas não ficam detidas nas fronteiras do seu território, pois que a nossa comunidade diaspórica não é um excedente 
             da Nação, mas constitutiva à Nação. 
             </p>
 
-            <h2 className="my-6 text-textcolor text-3xl"> Galeria </h2>
+            <h2 className="my-6 text-subtitle text-3xl"> Galeria </h2>
             <div>
               <Link href="/"><a className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
               <Link href="/"><a className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
@@ -67,7 +74,7 @@ export default function Comunidade() {
 
           <Footer 
           title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
-          title2={<a className="text-base text-textcolor opacity-80 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="/comunidade"
+          title2={<a className="text-base text-textcolor  font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="/comunidade"
           title3={<a className="font-bold text-base text-textcolor opacity-50"> Visitas às Comunidades radicadas em África </a>} link3="/comunidade-africa"
           />
         </div>

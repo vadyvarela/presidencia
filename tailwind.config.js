@@ -17,7 +17,9 @@ module.exports = {
       textColor: {
         'myblue': '#0A386A',
         'bluelight': '#3A5E85',
-        'textcolor': '#2D1603'
+        'textcolor': '#395C83',
+        'corpo': '#192839',
+        'subtitle': '#5F7A98'
       },
       borderColor: theme => ({
         ...theme('colors'),

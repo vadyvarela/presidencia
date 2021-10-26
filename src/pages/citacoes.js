@@ -10,8 +10,8 @@ export default function Exterior() {
       <section className="h-screen w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
         <Header />
         
-        <div className="mt-4 ">
-          <h2 className="mt-8 text-center text-3xl md:text-4xl text-textcolor leading-tight opacity-80">
+        <div className="mt-4 mb-32">
+          <h2 className="mt-8 text-center text-3xl md:text-4xl text-textcolor leading-tight">
           Jorge Carlos Fonseca: O Presidente de todos os Cabo-Verdianos 
           Citações de Jorge Carlos Fonseca relativas às Comunidades <br /> Cabo-verdianas no Exterior 2011 a 2021
           </h2>
@@ -108,7 +108,7 @@ export default function Exterior() {
       <Footer 
        title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
        title2={<a className="text-base text-textcolor opacity-50 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2=""
-       title3={<a className="font-bold text-base text-textcolor opacity-80">O Presidente da República e suas citações </a>} link3=""
+       title3={<a className="font-bold text-base text-textcolor">O Presidente da República e suas citações </a>} link3=""
       />
     </Layout>
   )
