@@ -1,10 +1,4 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import comunidadeEuropa from '../../public/img/gallerys.png'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
-import Header from '../components/Main/Header'
-import Footer from '../components/Main/Footer'
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 25}`

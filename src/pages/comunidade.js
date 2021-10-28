@@ -49,12 +49,27 @@ export default function Comunidade() {
             <h2 className="my-8 font-bold text-xl text-subtitle"> Estimativa da Comunidade Cabo-verdiana no Mundo</h2>
 
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-              <ComunidadeCard location="Estados Unidos" number="264.900" percente="51,12 %" />
-              <ComunidadeCard location="Portugal" number="80.000" percente="15,44 %" />
-              <ComunidadeCard location="Angola" number="45.000" percente="8,68 %" />
-              <ComunidadeCard location="Estados Unidos" number="264.900" percente="51,12 %" />
-              <ComunidadeCard location="Estados Unidos" number="264.900" percente="51,12 %" />
-              <ComunidadeCard location="Estados Unidos" number="264.900" percente="51,12 %" />
+              <ComunidadeCard location="Estados Unidos" number="264.900" percente="51,12%" />
+              <ComunidadeCard location="Portugal" number="80.000" percente="15,44%" />
+              <ComunidadeCard location="Angola" number="45.000" percente="8,68" />
+              <ComunidadeCard location="França" number="25.000" percente="4,82%" />
+              <ComunidadeCard location="Senegal" number="25.000 " percente="4,82" />
+              <ComunidadeCard location="São Tomé e Príncipe" number="20.000 " percente="3,86" />
+              <ComunidadeCard location="Holanda" number="16.580" percente="3,20" />
+              <ComunidadeCard location="Espanha" number="12.000" percente="2,32" />
+              <ComunidadeCard location="Itália" number="10.000" percente="1,93" />
+              <ComunidadeCard location="Argentina" number="5.200" percente="1,00" />
+              <ComunidadeCard location="Luxemburgo" number="3.000" percente="0,58" />
+              <ComunidadeCard location="Suiça" number="3.000" percente="0,58" />
+              <ComunidadeCard location="Guiné-Bissau" number="2.400" percente="0,46" />
+              <ComunidadeCard location="Moçambique" number="2.000" percente="0,39" />
+              <ComunidadeCard location="Brasil" number="1.000" percente="0,19" />
+              <ComunidadeCard location="Bélgica" number="800" percente="0,15" />
+              <ComunidadeCard location="Alemanha" number="800" percente="0,15" />
+              <ComunidadeCard location="Suécia" number="700" percente="0,14" />
+              <ComunidadeCard location="Canadá" number="300" percente="0,06" />
+              <ComunidadeCard location="Noruega" number="300" percente="0,06" />
+              <ComunidadeCard location="Gabão" number="200" percente="0,04" />
             </div>
 
             <p className="text-textcolor text-sm my-5"> Fonte: IAPE: Ministério das Comunidades, 2009 </p>
@@ -74,7 +89,7 @@ export default function Comunidade() {
 
           <Footer 
           title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
-          title2={<a className="text-base text-textcolor  font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="/comunidade"
+          title2={<a className="text-base text-textcolor font-bold"> As Comunidades Cabo-verdianas no Exterior  </a>} link2="/comunidade"
           title3={<a className="font-bold text-base text-textcolor opacity-50"> Visitas às Comunidades radicadas em África </a>} link3="/comunidade-africa"
           />
         </div>

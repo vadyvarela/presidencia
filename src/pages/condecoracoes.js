@@ -50,7 +50,7 @@ export default function Condecoracoes() {
 
             As medalhas foram entregues pelo próprio Presidente da República nas visitas que fez às comunidade cabo-verdianas, 
             normalmente em eventos solenes com enorme significado para os distinguidos e para os participantes. 
-            É imperativo para Jorge Carlos Fonseca que, sendo possível, as cerimónias de condecoração de personalidades das 
+            <br /><br /> É imperativo para Jorge Carlos Fonseca que, sendo possível, as cerimónias de condecoração de personalidades das 
             comunidades cabo-verdianas sejam realizadas nos países onde elas residem. <br /><br />
 
             </p>
@@ -66,8 +66,8 @@ export default function Condecoracoes() {
         </div>
         <Footer 
           title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
-          title2={<a className="text-base text-textcolor opacity-80 font-bold"> Condecorações </a>} link2="/condecoracoes"
-          title3={<a className="font-bold text-base text-textcolor opacity-50"> Citações </a>} link3="/citacoess"
+          title2={<a className="text-base text-textcolor font-bold"> Condecorações </a>} link2="/condecoracoes"
+          title3={<a className="font-bold text-base text-textcolor opacity-50"> Citações </a>} link3="/citacoes"
           />
       </section>
     </Layout>

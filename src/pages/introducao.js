@@ -21,7 +21,7 @@ export default function Introducao() {
         <div className="mt-4 ">
           <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Introdução </h2>
 
-          <div className="mt-5 flex flex-col md:flex-row">
+          <div className="mb-32 mt-5 flex flex-col md:flex-row">
             <div className="w-full md:w-3/4">
               <p className="mr-6 text-base text-corpo leading-normal">Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
                 O Presidente de Todos os Cabo-verdianos», apresentar ao leitor um olhar sobre o exercício da magistratura 

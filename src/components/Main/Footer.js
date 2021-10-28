@@ -8,7 +8,7 @@ import Menu from '../Menu/Menu'
 export default function Footer(props) {
   return (
     <footer className="fixed bottom-0 left-0 right-0 w-full px-10 bg-gbsite">
-      <div className="flex items-center flex-row justify-between py-4 ">
+      <div className="flex items-center flex-row justify-around py-4 ">
         <div>
           <Image src={left} width={25} height={25} />
         </div>
