@@ -7,7 +7,7 @@ const myLoader = ({ src, width, quality }) => {
 }
 
 var gallery = [];
-for (var i = 1; i <= 20; i++) {
+for (var i = 1; i <= 9; i++) {
   gallery.push({
     src: "./img/europa/" + i + ".jpg",
     // thumb: "./img/africa01" + i + ".jpg",
@@ -17,7 +17,7 @@ for (var i = 1; i <= 20; i++) {
 
 
 var galleryeua = [];
-for (var i = 1; i <= 20; i++) {
+for (var i = 1; i <= 9; i++) {
   galleryeua.push({
     src: "./img/eua/" + i + ".jpg",
     // thumb: "./img/africa01" + i + ".jpg",
