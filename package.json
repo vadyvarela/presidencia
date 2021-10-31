@@ -10,6 +10,7 @@
     "css": "postcss styles/tailwind.css -o styles/globals.css"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.8",
     "next": "11.1.2",
     "next-seo": "^4.28.1",
     "nprogress": "^0.2.0",

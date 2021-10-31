@@ -72,7 +72,7 @@ export default function Comunidade() {
               <ComunidadeCard location="Gabão" number="200" percente="0,04" />
             </div>
 
-            <p className="text-textcolor text-sm my-5"> Fonte: IAPE: Ministério das Comunidades, 2009 </p>
+            <p className="text-corpo text-sm my-5"> Fonte: IAPE: Ministério das Comunidades, 2009 </p>
             <p className="mr-6 text-base text-corpo leading-relaxed">
             A importância estratégica da emigração para o desenvolvimento de Cabo Verde, em termos económicos, políticos, 
             sociais e culturais, é um facto incontestável. De tal maneira que nos assumimos como um Estado cujas políticas 

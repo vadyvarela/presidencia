@@ -4,10 +4,40 @@ import condecoracoes from '../../public/img/condecoracoes.png'
 import Layout from '../components/Main/Layout'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
-
+import { Fancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox.css";
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 25}`
 }
+
+// Image gallery
+var gallery = [
+  {
+    src: "https://lipsum.app/id/2/800x600",
+    thumb: "https://lipsum.app/id/2/80x80",
+    caption: "First image",
+  },
+  {
+    src: "https://lipsum.app/id/3/800x600",
+    thumb: "https://lipsum.app/id/3/80x80",
+    caption: "Second image",
+  },
+  {
+    src: "https://lipsum.app/id/4/800x600",
+    thumb: "https://lipsum.app/id/4/80x80",
+    caption: "Third image",
+  },
+];
+
+function openImage() {
+  Fancybox.show(gallery, {
+    // Your options go here
+  });
+}
+
+/*Fancybox.bind("[data-fancybox]", {
+  // Your options go here
+});*/
 
 export default function Condecoracoes() {
   return (
@@ -57,7 +87,7 @@ export default function Condecoracoes() {
 
             <h2 className="my-6 text-textcolor text-3xl"> Galeria  </h2>
             <div>
-              <Link href="#"><a className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
+              <Link href="#"><a onClick={openImage} className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
               <Link href="#"><a className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
             </div>
           </div>

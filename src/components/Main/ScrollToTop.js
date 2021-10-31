@@ -42,7 +42,7 @@ export default class ScrollToTop extends Component {
           <div onClick={() => this.scrollToTop()}>
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="60" height="60" fill="#395C83"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9898 9.54245L17.0962 22.4361L20.6317 25.9716L27.5496 19.0537L27.4944 51.2531L32.4943 51.2617L32.5494 19.1731L39.3479 25.9716L42.8834 22.4361L29.9898 9.54245Z" fill="#F3ECE6"/>
+              <path fillRule="evenodd" clipRule="evenodd" d="M29.9898 9.54245L17.0962 22.4361L20.6317 25.9716L27.5496 19.0537L27.4944 51.2531L32.4943 51.2617L32.5494 19.1731L39.3479 25.9716L42.8834 22.4361L29.9898 9.54245Z" fill="#F3ECE6"/>
             </svg>
           </div>
         )}

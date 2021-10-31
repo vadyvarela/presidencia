@@ -31,7 +31,7 @@ export default function Exterior() {
               />
             </div>
 
-            <p className="mr-6 text-base text-textcolor leading-relaxed">
+            <p className="mr-6 text-base text-corpo leading-relaxed">
               A 21 de Agosto de 2011, o cidadão Jorge Carlos de Almeida Fonseca foi eleito ao cargo de Presidente da República, 
               Chefe de Estado e representante máximo da Nação, com 54,09 por cento dos votos, correspondentes a 97.103 votos.
               <br /> <br />

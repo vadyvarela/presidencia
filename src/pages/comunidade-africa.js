@@ -2,12 +2,43 @@ import Image from 'next/image'
 import Link from 'next/link'
 import comunidadeAfrica from '../../public/img/comunidadeAfrica.png'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
+import { Fancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox.css";
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 25}`
+}
+
+var gallery = [];
+for (var i = 1; i <= 9; i++) {
+  gallery.push({
+    src: "./img/africa01/" + i + ".jpg",
+    // thumb: "./img/africa01" + i + ".jpg",
+    caption: "Comunidade Africana",
+  });
+}
+
+var gallery02 = [];
+for (var i = 1; i <= 9; i++) {
+  gallery02.push({
+    src: "./img/africa02/" + i + ".jpg",
+    // thumb: "./img/africa01" + i + ".jpg",
+    caption: "Comunidade Africana",
+  });
+}
+
+function openImage() {
+  Fancybox.show(gallery, {
+    // Your options go here
+  });
+}
+
+function openImage02() {
+  Fancybox.show(gallery02, {
+    // Your options go here
+  });
 }
 
 export default function Comunidade() {
@@ -46,8 +77,8 @@ export default function Comunidade() {
 
             <h2 className="my-6 text-subtitle text-3xl"> Galeria </h2>
             <div>
-              <Link href="#"><a className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
-              <Link href="#"><a className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
+              <Link href="#"><a onClick={openImage} className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
+              <Link href="#"><a onClick={openImage02} className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
             </div>
           </div>
 

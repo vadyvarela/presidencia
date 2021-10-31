@@ -7,7 +7,7 @@ module.exports = {
         '12': '3rem',
       },
       fontFamily: {
-        Noto: ['Noto', 'Arial', 'sans-sarif']
+        Noto: ['Zen Antique', 'sans-sarif']
       },
       backgroundColor: theme => ({
         ...theme('colors'),

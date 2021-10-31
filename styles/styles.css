@@ -104,7 +104,7 @@ input {
 .menu ul li:hover {
   transition: 1s;
   margin-right: 10px;
-  /* background: white; */
+  background: none; 
 }
 
 .menuEffects {

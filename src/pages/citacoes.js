@@ -11,7 +11,7 @@ export default function Exterior() {
         <Header />
         
         <div className="mt-4 mb-32">
-          <h2 className="mt-8 text-center text-3xl md:text-4xl text-textcolor leading-tight">
+          <h2 className="mt-12 text-center text-3xl md:text-4xl text-textcolor leading-tight">
           Jorge Carlos Fonseca: O Presidente de todos os Cabo-Verdianos 
           Citações de Jorge Carlos Fonseca relativas às Comunidades <br /> Cabo-verdianas no Exterior 2011 a 2021
           </h2>

@@ -4,6 +4,7 @@ import '../../styles/styles.css'
 import { DefaultSeo } from 'next-seo'
 import ScrollToTop from '../components/Main/ScrollToTop'
 
+
 function MyApp({ Component, pageProps, router  }) {
   const url = `https://presidencia.vercel.app/${router.route}`
   return (
