@@ -32,7 +32,7 @@ export default function Comunidade() {
               />
             </div>
 
-            <p className="mr-6 text-base text-corpo leading-relaxed">Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
+            <p className="mr-6 text-base text-corpo leading-relaxed">
             A emigração está profundamente enraizada na sociedade cabo-verdiana apresentando-se como um 
             dos fenómenos mais antigos e estáveis, antecedendo em muitas décadas, a independência de Cabo Verde, em 1975. <br />
             Como recurso para colmatar as muitas privações sentidas, os habitantes deste arquipélago do Sahel demandaram 

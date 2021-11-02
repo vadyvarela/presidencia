@@ -4,8 +4,7 @@ import comunidadeAfrica from '../../public/img/comunidadeAfrica.png'
 import Layout from '../components/Main/Layout'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
-import { Fancybox } from "@fancyapps/ui"
-import "@fancyapps/ui/dist/fancybox.css";
+
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 25}`
@@ -64,7 +63,6 @@ export default function Comunidade() {
             </div>
 
             <p className="mr-6 text-base text-corpo leading-relaxed">
-              Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
               Relativamente à emigração cabo-verdiana no continente africano, Jorge Carlos Fonseca estabeleceu como 
               estratégia promover e encetar, em termos de intervenção presidencial, um diálogo de Alto Nível com os seus homólogos, 
               com o objectivo de propor caminhos e viabilizar compromissos que tivessem em vista a promoção e a integração das nossas 
@@ -74,11 +72,10 @@ export default function Comunidade() {
               Angola, Côte D’Ivoire, Gana, Guiné-Bissau, Guiné Equatorial, Moçambique, São Tomé e Príncipe e Senegal.
             </p>
 
-
             <h2 className="my-6 text-subtitle text-3xl"> Galeria </h2>
             <div>
-              <Link href="#"><a onClick={openImage} className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
-              <Link href="#"><a onClick={openImage02} className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
+              <Link href="#"><a className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
+              <Link href="#"><a className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
             </div>
           </div>
 

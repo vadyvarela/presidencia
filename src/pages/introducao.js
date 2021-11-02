@@ -19,7 +19,7 @@ export default function Introducao() {
         <Header />
         
         <div className="mt-4 ">
-          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Introdução </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Exposição Virtual - Jorge Carlos Fonseca: O Presidente Junto das Comunidades </h2>
 
           <div className="mb-32 mt-5 flex flex-col md:flex-row">
             <div className="w-full md:w-3/4">
@@ -65,7 +65,7 @@ export default function Introducao() {
 
           <Footer 
             title1={<a className="text-base text-textcolor font-bold">Introdução </a>} link1="/introducao"
-            title2={<a className="text-base text-textcolor opacity-50 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="exterior"
+            title2={<a className="text-base text-textcolor opacity-50 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="/exterior"
             title3={<a className="font-bold text-base text-textcolor opacity-50"> O Presidente da República e as Comunidades cabo-verdianas no exterior </a>} link3="/comunidade"
           />
         </div>
