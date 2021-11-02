@@ -26,9 +26,6 @@ export default function ComunidadeEuropa() {
               src={comunidadeEuropa}
               objectFit="cover"
               priority={true}
-              loader={myLoader}
-              placeholder='blur'
-              blurDataURL={comunidadeEuropa}
               />
             </div>
 

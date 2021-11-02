@@ -21,14 +21,9 @@ export default function ComunidadeMundo() {
 
           <div className=" mb-32 mt-5">
             <div className="shadowpr mb-8">
-              <Image
+              <img
               alt="Comunidade em EUA e Mundo"
               src={comunidadeMundo}
-              objectFit="cover"
-              priority={true}
-              loader={myLoader}
-              placeholder='blur'
-              blurDataURL={comunidadeMundo}
               />
             </div>
 

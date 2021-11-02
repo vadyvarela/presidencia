@@ -50,14 +50,9 @@ export default function Condecoracoes() {
 
           <div className="mb-32 mt-5">
             <div className="shadowpr mb-8 ">
-              <Image
+              <img
               alt="Condecorações"
               src={condecoracoes}
-              objectFit="cover"
-              priority={true}
-              loader={myLoader}
-              placeholder='blur'
-              blurDataURL={condecoracoes}
               />
             </div>
 

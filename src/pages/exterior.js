@@ -20,14 +20,9 @@ export default function Exterior() {
 
           <div className="mt-5 mb-32">
             <div className="shadowpr mb-8 ">
-              <Image 
+              <img 
               src={exterior} 
               alt="Presidencia"
-              objectFit="cover"
-              priority={true}
-              loader={myLoader}
-              placeholder='blur'
-              blurDataURL={exterior}
               />
             </div>
 

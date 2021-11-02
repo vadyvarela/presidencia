@@ -1,10 +1,4 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import logo from '../../public/img/logo.png'
-import capa from '../../public/img/capa1.png'
-import intro from '../../public/img/introducao.png'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
 
@@ -50,15 +44,9 @@ export default function Introducao() {
             </div>
             <div className="shadowpr w-full h-full
             md:w-1/4 transform hover:scale-110 transition delay-150 duration-300 ease-in-out rounded ">
-              <Image 
-                loader={myLoader}
-                src={intro}
+              <img 
+                src='img/introducao.png'
                 alt="Jorge Carlos Fonseca"
-                objectFit="cover"
-                priority={true}
-                loader={myLoader}
-                placeholder='blur'
-                blurDataURL={intro}
               />
             </div>
           </div>

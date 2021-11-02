@@ -7,10 +7,6 @@ import Footer from '../components/Main/Footer'
 import { Fancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox.css";
 
-const myLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 25}`
-}
-
 var gallery = [];
 for (var i = 1; i <= 9; i++) {
   gallery.push({
@@ -52,19 +48,13 @@ export default function Comunidade() {
 
           <div className="mt-5 mb-32">
             <div className="shadowpr mb-8 ">
-              <Image
+              <img
               alt="Comunidade em África"
               src={comunidadeAfrica}
-              objectFit="cover"
-              priority={true}
-              loader={myLoader}
-              placeholder='blur'
-              blurDataURL={comunidadeAfrica}
               />
             </div>
 
             <p className="mr-6 text-base text-corpo leading-relaxed">
-              Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
               Relativamente à emigração cabo-verdiana no continente africano, Jorge Carlos Fonseca estabeleceu como 
               estratégia promover e encetar, em termos de intervenção presidencial, um diálogo de Alto Nível com os seus homólogos, 
               com o objectivo de propor caminhos e viabilizar compromissos que tivessem em vista a promoção e a integração das nossas 

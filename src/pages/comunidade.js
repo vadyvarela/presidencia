@@ -22,17 +22,12 @@ export default function Comunidade() {
 
           <div className="mt-5 mb-32">
             <div className="shadowpr mb-8 ">
-              <Image src={comunidade}
+              <img src={comunidade}
                 alt="Comunidade"
-                objectFit="cover"
-                priority={true}
-                loader={myLoader}
-                placeholder='blur'
-                blurDataURL={comunidade}
               />
             </div>
 
-            <p className="mr-6 text-base text-corpo leading-relaxed">Pretende-se, com esta exposição fotográfica digital intitulada «Jorge Carlos Fonseca: 
+            <p className="mr-6 text-base text-corpo leading-relaxed">
             A emigração está profundamente enraizada na sociedade cabo-verdiana apresentando-se como um 
             dos fenómenos mais antigos e estáveis, antecedendo em muitas décadas, a independência de Cabo Verde, em 1975. <br />
             Como recurso para colmatar as muitas privações sentidas, os habitantes deste arquipélago do Sahel demandaram 

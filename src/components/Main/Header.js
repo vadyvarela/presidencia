@@ -5,7 +5,7 @@ import logo from '../../../public/img/logo.png'
 export default function Header() {
   return (
     <div className="flex items-center justify-center flex-col mt-6">
-      <Link href="/introducao">
+      <Link href="/">
         <a>
         <Image
           src={logo}
