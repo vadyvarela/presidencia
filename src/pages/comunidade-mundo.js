@@ -1,14 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import comunidadeMundo from '../../public/img/restoMundo.png'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
-
-const myLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 25}`
-}
 
 export default function ComunidadeMundo() {
   return (
@@ -23,7 +16,7 @@ export default function ComunidadeMundo() {
             <div className="shadowpr mb-8">
               <img
               alt="Comunidade em EUA e Mundo"
-              src={comunidadeMundo}
+              src="img/restoMundo.png"
               />
             </div>
 

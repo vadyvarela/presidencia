@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import play from '../../public/img/play.svg'
 import Layout from '../components/Main/Layout'
 import Header from '../components/Main/Header'
 
@@ -34,7 +32,7 @@ export default function Home() {
           <div className="mr-4 text-textcolor opacity-80 font-bold text-sm md:text-xl">
             <Link href="/introducao">
               <a className="flex items-center"> 
-              <Image src={play} width={21} height={21} /> <span className="ml-2"> Apresentação </span> 
+              <img src="img/play.svg" width={21} height={21} /> <span className="ml-2"> Apresentação </span> 
               </a>
             </Link>
           </div>

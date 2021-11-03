@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import comunidadeAfrica from '../../public/img/comunidadeAfrica.png'
 import Layout from '../components/Main/Layout'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
@@ -49,7 +47,7 @@ export default function Comunidade() {
             <div className="shadowpr mb-8 ">
               <img
               alt="Comunidade em África"
-              src={comunidadeAfrica}
+              src="img/comunidadeAfrica.png"
               />
             </div>
 

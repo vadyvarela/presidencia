@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import condecoracoes from '../../public/img/condecoracoes.png'
 import Layout from '../components/Main/Layout'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
@@ -51,7 +49,7 @@ export default function Condecoracoes() {
             <div className="shadowpr mb-8 ">
               <img
               alt="Condecorações"
-              src={condecoracoes}
+              src="img/condecoracoes.png"
               />
             </div>
 

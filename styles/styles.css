@@ -92,9 +92,15 @@ input {
 }
 
 .menu ul li a {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   transition: color 0.2s;
+}
+
+.menu ul li a img {
+  width: 15px;
+  height: 15px;
 }
 
 .menu ul li a:hover {

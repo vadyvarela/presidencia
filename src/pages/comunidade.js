@@ -1,15 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import comunidade from '../../public/img/comunidade.png'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
 import ComunidadeCard from '../components/Main/ComunidadeCard'
-
-const myLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 25}`
-}
 
 export default function Comunidade() {
   return (
@@ -22,7 +15,7 @@ export default function Comunidade() {
 
           <div className="mt-5 mb-32">
             <div className="shadowpr mb-8 ">
-              <img src={comunidade}
+              <img src="img/comunidade.png"
                 alt="Comunidade"
               />
             </div>

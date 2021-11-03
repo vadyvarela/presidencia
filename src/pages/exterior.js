@@ -1,13 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import exterior from '../../public/img/exteriro.png'
 import Layout from '../components/Main/Layout'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
 
-const myLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 25}`
-}
 
 export default function Exterior() {
   return (
@@ -21,7 +16,7 @@ export default function Exterior() {
           <div className="mt-5 mb-32">
             <div className="shadowpr mb-8 ">
               <img 
-              src={exterior} 
+              src="img/exteriro.png" 
               alt="Presidencia"
               />
             </div>
