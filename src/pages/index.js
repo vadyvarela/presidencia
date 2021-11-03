@@ -9,9 +9,9 @@ const myLoader = ({ src, width, quality }) => {
 export default function Home() {
   return (
     <Layout title="Presidencia" description={`Jorge Carlos Fonseca: O Presidente junto das Comunidades`}>
-      <section className="h-screen w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
+      <section className="w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
         <Header />
-        
+
         <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Jorge Carlos Fonseca: O Presidente junto das Comunidades </h2>
 
         <div className="mt-6">
@@ -31,15 +31,15 @@ export default function Home() {
           </div>
           <div className="mr-4 text-textcolor opacity-80 font-bold text-sm md:text-xl">
             <Link href="/introducao">
-              <a className="flex items-center"> 
-              <img src="img/play.svg" width={21} height={21} /> <span className="ml-2"> Apresentação </span> 
+              <a className="flex items-center">
+                <img src="img/play.svg" width={21} height={21} /> <span className="ml-2"> Apresentação </span>
               </a>
             </Link>
           </div>
 
         </div>
 
-         
+
       </section>
     </Layout>
   )

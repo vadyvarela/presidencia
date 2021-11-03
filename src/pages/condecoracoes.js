@@ -41,11 +41,23 @@ for (var i = 1; i <= 215; i++) {
     caption: "",
   });
 }
-console.log(list1mandato)
+var list2mandato = [];
+for (var i = 1; i <= 37; i++) {
+  list2mandato.push({
+    src: "./img/condecoracao/2mandato/con(" + i + ").jpg",
+    // thumb: "./img/africa01" + i + ".jpg",
+    caption: "",
+  });
+}
 
 
 function openImage() {
   Fancybox.show(list1mandato, {
+    // Your options go here
+  });
+}
+function openImage2Mandato() {
+  Fancybox.show(list2mandato, {
     // Your options go here
   });
 }
@@ -56,7 +68,7 @@ function openImage() {
 export default function Condecoracoes() {
   return (
     <Layout title="Condecorações" description={`Condecorações`}>
-      <section className="h-screen w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
+      <section className="w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
         <Header />
 
         <div className="mt-4 ">
@@ -96,8 +108,8 @@ export default function Condecoracoes() {
 
             <h2 className="my-6 text-textcolor text-3xl"> Galeria  </h2>
             <div>
-              <Link href="#"><a className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
-              <Link href="#"><a className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
+              <a onClick={openImage} className="cursor-pointer text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a>
+              <a onClick={openImage2Mandato} className="cursor-pointer text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a>
             </div>
           </div>
 

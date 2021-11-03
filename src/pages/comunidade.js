@@ -4,12 +4,44 @@ import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
 import ComunidadeCard from '../components/Main/ComunidadeCard'
 
+import { Fancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox.css";
+
+var list1mandato = [];
+for (var i = 1; i <= 215; i++) {
+  list1mandato.push({
+    src: "./img/condecoracao/1mandato/con(" + i + ").jpg",
+    // thumb: "./img/africa01" + i + ".jpg",
+    caption: "",
+  });
+}
+var list2mandato = [];
+for (var i = 1; i <= 37; i++) {
+  list2mandato.push({
+    src: "./img/condecoracao/2mandato/con(" + i + ").jpg",
+    // thumb: "./img/africa01" + i + ".jpg",
+    caption: "",
+  });
+}
+
+
+function openImage() {
+  Fancybox.show(list1mandato, {
+    // Your options go here
+  });
+}
+function openImage2Mandato() {
+  Fancybox.show(list2mandato, {
+    // Your options go here
+  });
+}
+
 export default function Comunidade() {
   return (
     <Layout title="Comunidade" description={`Descrisao...`}>
-      <section className="h-screen w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
+      <section className="w-screen max-w-screen-lg xl:max-w-screen-xl container mx-auto px-4" >
         <Header />
-        
+
         <div className="mt-4">
           <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> As Comunidades Cabo-verdianas no Exterior </h2>
 
@@ -21,17 +53,17 @@ export default function Comunidade() {
             </div>
 
             <p className="mr-6 text-base text-corpo leading-relaxed">
-            A emigração está profundamente enraizada na sociedade cabo-verdiana apresentando-se como um 
-            dos fenómenos mais antigos e estáveis, antecedendo em muitas décadas, a independência de Cabo Verde, em 1975. <br />
-            Como recurso para colmatar as muitas privações sentidas, os habitantes deste arquipélago do Sahel demandaram 
-            outras paragens para alcançar sucesso pessoal, familiar e social, desde os primórdios da formação da Nação cabo-verdiana 
-            que ocorreu, aproximadamente em 1460, com a descoberta das ilhas por navegadores portugueses, conhecendo um dos primeiros 
-            momentos de particular expressão, nos finais do século XVII e início do século XVIII, quando os cabo-verdianos rumaram 
-            para a América para a pesca da baleia, e, posteriormente, para todos os continentes, dando origem  às comunidades 
-            cabo-verdianas, parte integrante da Nação cabo-verdiana. <br />
-            Ainda que, em termos estatísticos, os números da população cabo-verdiana emigrada não sejam rigorosos, os 
-            registos informais existentes dão conta que ela é o dobro da população residente no país, facto que nos dá um sentido de grandeza da Nação cabo-verdiana. 
-            O Quadro abaixo aponta para números mais modestos, mas mesmo assim confirma a superioridade em número da comunidade residente fora do país e identifica as paragens onde homens e mulheres destas ilhas demandaram, em África, na Europa e na América, em busca de uma vida melhor. 
+              A emigração está profundamente enraizada na sociedade cabo-verdiana apresentando-se como um
+              dos fenómenos mais antigos e estáveis, antecedendo em muitas décadas, a independência de Cabo Verde, em 1975. <br />
+              Como recurso para colmatar as muitas privações sentidas, os habitantes deste arquipélago do Sahel demandaram
+              outras paragens para alcançar sucesso pessoal, familiar e social, desde os primórdios da formação da Nação cabo-verdiana
+              que ocorreu, aproximadamente em 1460, com a descoberta das ilhas por navegadores portugueses, conhecendo um dos primeiros
+              momentos de particular expressão, nos finais do século XVII e início do século XVIII, quando os cabo-verdianos rumaram
+              para a América para a pesca da baleia, e, posteriormente, para todos os continentes, dando origem  às comunidades
+              cabo-verdianas, parte integrante da Nação cabo-verdiana. <br />
+              Ainda que, em termos estatísticos, os números da população cabo-verdiana emigrada não sejam rigorosos, os
+              registos informais existentes dão conta que ela é o dobro da população residente no país, facto que nos dá um sentido de grandeza da Nação cabo-verdiana.
+              O Quadro abaixo aponta para números mais modestos, mas mesmo assim confirma a superioridade em número da comunidade residente fora do país e identifica as paragens onde homens e mulheres destas ilhas demandaram, em África, na Europa e na América, em busca de uma vida melhor.
             </p>
 
             <h2 className="my-8 font-bold text-xl text-subtitle"> Estimativa da Comunidade Cabo-verdiana no Mundo</h2>
@@ -62,23 +94,23 @@ export default function Comunidade() {
 
             <p className="text-corpo text-sm my-5"> Fonte: IAPE: Ministério das Comunidades, 2009 </p>
             <p className="mr-6 text-base text-corpo leading-relaxed">
-            A importância estratégica da emigração para o desenvolvimento de Cabo Verde, em termos económicos, políticos, 
-            sociais e culturais, é um facto incontestável. De tal maneira que nos assumimos como um Estado cujas políticas 
-            públicas não ficam detidas nas fronteiras do seu território, pois que a nossa comunidade diaspórica não é um excedente 
-            da Nação, mas constitutiva à Nação. 
+              A importância estratégica da emigração para o desenvolvimento de Cabo Verde, em termos económicos, políticos,
+              sociais e culturais, é um facto incontestável. De tal maneira que nos assumimos como um Estado cujas políticas
+              públicas não ficam detidas nas fronteiras do seu território, pois que a nossa comunidade diaspórica não é um excedente
+              da Nação, mas constitutiva à Nação.
             </p>
 
             <h2 className="my-6 text-subtitle text-3xl"> Galeria </h2>
             <div>
-              <Link href="/"><a className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
-              <Link href="/"><a className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
+              <a onClick={openImage} className="cursor-pointer text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a>
+              <a onClick={openImage2Mandato} className="cursor-pointer text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a>
             </div>
           </div>
 
-          <Footer 
-          title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
-          title2={<a className="text-base text-textcolor font-bold"> As Comunidades Cabo-verdianas no Exterior  </a>} link2="/comunidade"
-          title3={<a className="font-bold text-base text-textcolor opacity-50"> Visitas às Comunidades radicadas em África </a>} link3="/comunidade-africa"
+          <Footer
+            title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
+            title2={<a className="text-base text-textcolor font-bold"> As Comunidades Cabo-verdianas no Exterior  </a>} link2="/comunidade"
+            title3={<a className="font-bold text-base text-textcolor opacity-50"> Visitas às Comunidades radicadas em África </a>} link3="/comunidade-africa"
           />
         </div>
       </section>
