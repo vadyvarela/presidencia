@@ -1,14 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import comunidadeEuropa from '../../public/img/comunidadeEuropa.png'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
-
-const myLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 25}`
-}
 
 export default function ComunidadeEuropa() {
   return (
@@ -21,14 +14,9 @@ export default function ComunidadeEuropa() {
 
           <div className="mb-32 mt-5">
             <div className="shadowpr mb-8">
-              <Image
+              <img
               alt="Comunidade em Europa"
-              src={comunidadeEuropa}
-              objectFit="cover"
-              priority={true}
-              loader={myLoader}
-              placeholder='blur'
-              blurDataURL={comunidadeEuropa}
+              src="img/comunidadeEuropa.png"
               />
             </div>
 

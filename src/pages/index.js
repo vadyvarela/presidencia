@@ -1,10 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../../public/img/logo.png'
-import capa from '../../public/img/capa1.png'
-import play from '../../public/img/play.svg'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
 import Header from '../components/Main/Header'
 
 const myLoader = ({ src, width, quality }) => {
@@ -20,15 +15,10 @@ export default function Home() {
         <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Jorge Carlos Fonseca: O Presidente junto das Comunidades </h2>
 
         <div className="mt-6">
-          <Image
+          <img
             className="shadow-md"
-            src={capa}
+            src="img/capa1.png"
             alt="Presidencia"
-            objectFit="cover"
-            priority={true}
-            loader={myLoader}
-            placeholder='blur'
-            blurDataURL={capa}
           />
         </div>
 
@@ -42,7 +32,7 @@ export default function Home() {
           <div className="mr-4 text-textcolor opacity-80 font-bold text-sm md:text-xl">
             <Link href="/introducao">
               <a className="flex items-center"> 
-              <Image src={play} width={21} height={21} /> <span className="ml-2"> Apresentação </span> 
+              <img src="img/play.svg" width={21} height={21} /> <span className="ml-2"> Apresentação </span> 
               </a>
             </Link>
           </div>

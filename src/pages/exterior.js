@@ -1,13 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import exterior from '../../public/img/exteriro.png'
 import Layout from '../components/Main/Layout'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
 
-const myLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 25}`
-}
 
 export default function Exterior() {
   return (
@@ -20,14 +15,9 @@ export default function Exterior() {
 
           <div className="mt-5 mb-32">
             <div className="shadowpr mb-8 ">
-              <Image 
-              src={exterior} 
+              <img 
+              src="img/exteriro.png" 
               alt="Presidencia"
-              objectFit="cover"
-              priority={true}
-              loader={myLoader}
-              placeholder='blur'
-              blurDataURL={exterior}
               />
             </div>
 
@@ -56,7 +46,7 @@ export default function Exterior() {
 
           <Footer 
             title1={<a className="text-base text-textcolor opacity-50 font-bold">Introdução </a>} link1="/introducao"
-            title2={<a className="text-base text-textcolor font-bold"> O Presidente da República e as Comunidades Cabo-verdianas no Exterior </a>} link2="exterior"
+            title2={<a className="text-base text-textcolor font-bold"> O Presidente da República e as Comunidades Cabo-verdianas no Exterior </a>} link2="/exterior"
             title3={<a className="font-bold text-base text-textcolor opacity-50"> As Comunidades Cabo-verdianas no Exterior </a>} link3="/comunidade"
           />
         </div>

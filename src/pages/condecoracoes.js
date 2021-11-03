@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import condecoracoes from '../../public/img/condecoracoes.png'
 import Layout from '../components/Main/Layout'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
@@ -66,14 +64,9 @@ export default function Condecoracoes() {
 
           <div className="mb-32 mt-5">
             <div className="shadowpr mb-8 ">
-              <Image
+              <img
                 alt="Condecorações"
-                src={condecoracoes}
-                objectFit="cover"
-                priority={true}
-                loader={myLoader}
-                placeholder='blur'
-                blurDataURL={condecoracoes}
+                src="img/condecoracoes.png"
               />
             </div>
 
@@ -103,7 +96,7 @@ export default function Condecoracoes() {
 
             <h2 className="my-6 text-textcolor text-3xl"> Galeria  </h2>
             <div>
-              <Link href="#"><a onClick={openImage} className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
+              <Link href="#"><a className="text-textcolor font-bold text-3xl mr-10"> I Mandato - 2011 - 2016  </a></Link>
               <Link href="#"><a className="text-textcolor font-bold text-3xl"> II Mandato - 2016 - 2021  </a></Link>
             </div>
           </div>

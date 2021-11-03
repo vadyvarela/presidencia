@@ -1,10 +1,4 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import logo from '../../public/img/logo.png'
-import capa from '../../public/img/capa1.png'
-import intro from '../../public/img/introducao.png'
 import Layout from '../components/Main/Layout'
-import Menu from '../components/Menu/Menu'
 import Header from '../components/Main/Header'
 import Footer from '../components/Main/Footer'
 
@@ -19,7 +13,7 @@ export default function Introducao() {
         <Header />
         
         <div className="mt-4 ">
-          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Introdução </h2>
+          <h2 className="mt-8 text-3xl md:text-4xl font-semibold text-textcolor leading-tight"> Exposição Virtual - Jorge Carlos Fonseca: O Presidente Junto das Comunidades </h2>
 
           <div className="mb-32 mt-5 flex flex-col md:flex-row">
             <div className="w-full md:w-3/4">
@@ -50,22 +44,16 @@ export default function Introducao() {
             </div>
             <div className="shadowpr w-full h-full
             md:w-1/4 transform hover:scale-110 transition delay-150 duration-300 ease-in-out rounded ">
-              <Image 
-                loader={myLoader}
-                src={intro}
+              <img 
+                src='img/introducao.png'
                 alt="Jorge Carlos Fonseca"
-                objectFit="cover"
-                priority={true}
-                loader={myLoader}
-                placeholder='blur'
-                blurDataURL={intro}
               />
             </div>
           </div>
 
           <Footer 
             title1={<a className="text-base text-textcolor font-bold">Introdução </a>} link1="/introducao"
-            title2={<a className="text-base text-textcolor opacity-50 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="exterior"
+            title2={<a className="text-base text-textcolor opacity-50 font-bold">As Comunidades Cabo-verdianas no Exterior </a>} link2="/exterior"
             title3={<a className="font-bold text-base text-textcolor opacity-50"> O Presidente da República e as Comunidades cabo-verdianas no exterior </a>} link3="/comunidade"
           />
         </div>
